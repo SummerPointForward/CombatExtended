@@ -13,6 +13,12 @@
 					<xpath>Defs/ThingDef[defName="RNThrown_M84Stun_Grenade"]</xpath>
 				</li>
 
+				<!-- ========== Remove Grenades and their projectiles ========== -->
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="RNThrown_RGD5HEGrenade"]</xpath>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>
