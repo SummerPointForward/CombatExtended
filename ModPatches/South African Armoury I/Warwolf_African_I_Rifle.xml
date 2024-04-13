@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>South African Armoury I</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- ========== SS-77 ========== -->
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>Gun_SS-77</defName>
+					<statBases>
+						<Mass>7.50</Mass>
+						<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+						<SightsEfficiency>1</SightsEfficiency>
+						<ShotSpread>0.07</ShotSpread>
+						<SwayFactor>1.34</SwayFactor>
+						<Bulk>13.35</Bulk>
+						<WorkToMake>34000</WorkToMake>
+					</statBases>
+					<costList>
+						<Chemfuel>15</Chemfuel>
+						<Steel>92</Steel>
+						<ComponentIndustrial>6</ComponentIndustrial>
+					</costList>
+					<Properties>
+						<recoilAmount>1</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+						<warmupTime>1.3</warmupTime>
+						<range>60</range>
+						<burstShotCount>10</burstShotCount>
+						<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+						<soundCast>Shot_Minigun</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</Properties>
+
+					<AmmoUser>
+						<magazineSize>200</magazineSize>
+						<reloadTime>7.8</reloadTime>
+						<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+					</AmmoUser>
+
+					<FireModes>
+						<aiUseBurstMode>FALSE</aiUseBurstMode>
+						<aiAimMode>SuppressFire</aiAimMode>
+						<aimedBurstShotCount>5</aimedBurstShotCount>
+					</FireModes>
+
+					<weaponTags>
+						<li>Bipod_LMG</li>
+					</weaponTags>
+				</li>
+
+				<!-- ========== R4 Rifle ========== -->
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>Gun_R4</defName>
+					<statBases>
+						<Mass>3.60</Mass>
+						<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+						<SightsEfficiency>1.0</SightsEfficiency>
+						<ShotSpread>0.07</ShotSpread>
+						<SwayFactor>1.4</SwayFactor>
+						<Bulk>9.54</Bulk>
+						<WorkToMake>40000</WorkToMake>
+					</statBases>
+					<costList>
+						<Chemfuel>10</Chemfuel>
+						<Steel>60</Steel>
+						<ComponentIndustrial>7</ComponentIndustrial>
+					</costList>
+					<Properties>
+						<recoilAmount>2.08</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+						<warmupTime>1.1</warmupTime>
+						<range>50</range>
+						<burstShotCount>6</burstShotCount>
+						<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+						<soundCast>Shot_AssaultRifle</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</Properties>
+
+					<AmmoUser>
+						<magazineSize>25</magazineSize>
+						<reloadTime>4</reloadTime>
+						<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+					</AmmoUser>
+
+					<FireModes>
+						<aiUseBurstMode>TRUE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+						<aimedBurstShotCount>3</aimedBurstShotCount>
+					</FireModes>
+
+					<!-- No additional CE weaponTags needed -->
+				</li>
+
+				<!-- ========== NTW-20 ========== -->
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>Gun_NTW-20</defName>
+					<statBases>
+						<Mass>25.30</Mass>
+						<RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+						<SightsEfficiency>4</SightsEfficiency>
+						<ShotSpread>0.01</ShotSpread>
+						<SwayFactor>1.89</SwayFactor>
+						<Bulk>20.25</Bulk>
+						<WorkToMake>42500</WorkToMake>
+					</statBases>
+					<costList>
+						<Chemfuel>10</Chemfuel>
+						<Steel>85</Steel>
+						<ComponentIndustrial>10</ComponentIndustrial>
+					</costList>
+					<Properties>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>
+						<warmupTime>1.15</warmupTime>
+						<range>100</range>
+						<soundCast>Shot_NTW</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>14</muzzleFlashScale>
+					</Properties>
+
+					<AmmoUser>
+						<magazineSize>1</magazineSize>
+						<reloadTime>4.5</reloadTime>
+						<ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+					</AmmoUser>
+
+					<FireModes>
+						<aiUseBurstMode>FALSE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+					</FireModes>
+
+					<thingSetMakerTags>
+						<li>RewardStandardQualitySuper</li>
+					</thingSetMakerTags>
+
+					<weaponTags>
+						<li>SniperRifle</li>
+						<li>Bipod_ATR</li>
+						<li>CE_AI_SR</li>
+					</weaponTags>
+
+					<!-- No additional CE weaponTags needed -->
+
+					<AllowWithRunAndGun>false</AllowWithRunAndGun>
+				</li>
+
+				<!-- == Shared patches for firearm melee tools == -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Gun_SS-77" or
+						defName="Gun_R4" or
+						defName="Gun_NTW-20"
+						]/tools </xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>8</power>
+								<cooldownTime>1.55</cooldownTime>
+								<chanceFactor>1.5</chanceFactor>
+								<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>5</power>
+								<cooldownTime>2.02</cooldownTime>
+								<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>muzzle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>8</power>
+								<cooldownTime>1.55</cooldownTime>
+								<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
